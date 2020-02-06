@@ -1,11 +1,9 @@
-#+begin_src shell :shebang #!/bin/bash -i :results output :tangle restart_network
-HNAME=8.8.8.8
-count=2 # Send only two pings.
-if ping -c $count "$HNAME" 2> /dev/null
-then
-    echo "\"$HNAME\" still up and broadcasting spam your way."
-else
-    echo "\"$HNAME\" seems to be down. Reloading."
-    sudo service network-manager restart
-fi
-  #+end_src
+* Bash
+
+** MTP device handling
+#+begin_src shell :shebang #!/bin/bash -i :results output :tangle mountMTPdevice
+#!/bin/bash
+#+end_src
+
+
+* Python
